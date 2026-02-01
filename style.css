@@ -1,0 +1,342 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}   
+
+body {
+    background: linear-gradient(180deg, black, rgb(18, 18, 19));
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin: 0px auto 0px auto;
+}
+
+header {
+    margin-left: auto;
+    margin-right: auto;
+    width: 67%;
+    color: black;
+    background-color: white;
+    padding: 10px;
+}
+
+main {
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    margin-bottom: 250px;
+}
+
+header h1 {
+    font-size: 40px;
+}
+
+header h2 {
+    font-size: 15px;
+    font-weight: normal;
+}
+
+nav {
+    z-index: 2;
+    width: 67%;
+    background-color: rgba(21, 21, 26, 0.374);
+    border: solid white 2px;
+    padding: 5px 10px 15px 10px;
+    border-radius: 0px 0px 20px 20px;
+    margin: 0px auto 40px auto;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+}
+
+nav a {
+    transition: all 0.2s ease-in-out;
+    color: white;
+    font-size: 16px;
+    text-decoration: none;
+    border: solid white 2px;
+    padding: 10px 8px 8px 8px;
+    margin: 0px 5px 0px 5px;
+    border-radius: 0px 0px 10px 10px;
+    border-top: none;
+}
+
+nav a:hover {
+    color: black;
+    background-color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#ultimaobraoption {
+    padding-top: 60px;
+    margin-top: -60px;
+}
+
+#perfiloption {
+    padding-top: 60px;
+    margin-top: -60px;
+}
+
+#todasobrasoption {
+    padding-top: 60px;
+    margin-top: -60px;
+}
+
+.obra .perfil {
+    transition: all 0.2s ease-in-out;
+    margin: 0px 20px 0px 0px;
+    display: inline;
+    width: 180px;
+    float: left;
+    box-shadow: 0px 0px 10px black;
+    border: solid white 2px;
+    border-radius: 50%;
+}
+.obra {
+    border: solid white 1px;
+    z-index: 1;
+    position: relative;
+    text-align: left;
+    color: black;
+    background-color: rgba(188, 190, 211, 0.236);
+    margin: 20px 0px 25px 0px;
+    height: 202px;
+    padding: 10px;
+    box-shadow: 0px 0px 10px white;
+}
+
+hr {
+    transform: scaleX(1.1);
+    margin-bottom: 10px;
+    margin-top: 30px;
+    border: solid white 1px;
+}
+
+#ultimaobraoption {
+    text-shadow: 0px 0px 10px rgb(255, 225, 0);
+    color: rgb(255, 225, 0);
+}
+
+#obradestaque {
+    border: solid rgb(255, 221, 0) 1px;
+    box-shadow: 0px 0px 5px rgb(255, 225, 0);
+    margin-bottom: 20px;
+}
+
+.obra .disco {
+    z-index: -1;
+    animation: spin 2s infinite linear;
+    margin: 0px 10px 0px 0px;
+    display: inline;
+    width: 180px;
+    float: left;
+    border-radius: 50%;
+    box-shadow: 0px 0px 5px black;
+}
+
+.obra .capa {
+    transform: translateX(-190px);
+    transition: all 0.2s ease-in-out;
+    margin: 0px -180px 0px 0px;
+    display: inline;
+    width: 180px;
+    float: left;
+    box-shadow: 0px 0px 10px black;
+}
+
+.obra .capa:hover {
+    margin: 0px -80px 0px 0px;
+    scale: 1.1;
+    transform: translateX(-90px);
+    box-shadow: none;
+}
+
+.obra p {
+    color: white;
+    text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.725);
+    font-size: 25px;
+    font-weight: bolder;
+    margin: 0px 0px 5px 0px;
+}
+
+.obra a {
+    text-decoration: none;
+    color: rgb(7, 225, 0);
+}
+
+.obra a:hover{
+    text-decoration: underline;
+    color: rgb(7, 225, 0);
+}
+
+.obra .spotify{
+    color: rgb(7, 225, 0);
+}
+
+.fundo {
+    position: relative;
+    overflow: hidden;
+}
+
+.fundo::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+
+    background-size: cover;
+    background-position: center;
+
+    filter: blur(5px);
+    z-index: 0;
+
+    height: 200px;
+    margin: 20px 0px 20px 0px;
+}
+
+#perfil::before {
+    background-image: url("IMGS/efraimPaiva_profile.PNG");
+}
+
+#ultimaobra::before {
+    background-image: url("https://i.iheart.com/v3/url/aHR0cCUzQSUyRiUyRmltYWdlLmloZWFydC5jb20lMkZpaHItaW5nZXN0aW9uLXBpcGVsaW5lLXByb2R1Y3Rpb24tZnVnYSUyRmZ1Z2ElMkYyMDI1MDMxMDIxNTkwNTM4NCUyRjAyMDM1NzcyMDEzMCUyRnJlc291cmNlcyUyRjFiZjNkNjRlMTVhNGIzNGY4YTE0MmFlMmUxY2FmMmQ2LmpwZw==?ops=fit(480%2C480)");
+
+    background-position: top;
+}
+
+#tabareu::before {
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_B_7Kqm5ZeNb792f5Yr-OKolCMT726xW8Vg&s");
+}
+
+#desejo::before {
+    background-image: url("https://i.iheart.com/v3/url/aHR0cCUzQSUyRiUyRmltYWdlLmloZWFydC5jb20lMkZpaHItaW5nZXN0aW9uLXBpcGVsaW5lLXByb2R1Y3Rpb24tZnVnYSUyRmZ1Z2ElMkYyMDI1MDMxMDIxNTkwNTM4NCUyRjAyMDM1NzcyMDEzMCUyRnJlc291cmNlcyUyRjFiZjNkNjRlMTVhNGIzNGY4YTE0MmFlMmUxY2FmMmQ2LmpwZw==?ops=fit(480%2C480)");
+
+    background-position: top;
+}
+
+.just {
+    text-align: justify;
+}
+
+footer {
+    background-color: black;
+    padding: 25px;
+}
+
+footer p {
+    margin-bottom: 10px;
+}
+
+footer img {
+    transform: translateY(5px);
+    display: inline;
+    width: 25px;
+}
+
+footer #creditos {
+    display: inline;
+    margin-top: -30px;
+}
+
+footer a {
+    transition: all 0.2s ease-in-out;
+    text-decoration: none;
+    color: rgb(165, 228, 255);
+}
+
+footer a:hover {
+    background-color: white;
+    color: black;
+    padding: 5px;
+    border-radius: 15px;
+    font-weight: bold;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@media (max-width: 500px) {
+    header, nav {
+        width: 100%;
+    }
+
+    header h1 {
+        font-size: 30px;
+    }
+
+    nav a {
+        font-size: 10px;
+    }
+
+    nav a:hover {
+        color: black;
+        background-color: white;
+        font-size: 15px;
+        font-weight: bold;
+    }
+
+    hr {
+        transform: scaleX(1.1);
+    }
+    
+    main {
+        width: 90%;
+    }
+
+    main h2 {
+        font-size: 22px;
+    }
+
+    main .obra {
+        height: 132px;
+    }
+
+    .fundo::before {
+        height: 130px;
+    }
+
+    .obra .perfil {
+        width: 110px;
+    }
+
+    .obra .capa {
+        width: 110px;
+        transform: translateX(-120px);
+    }
+
+    .obra .capa:hover {
+        margin: 0px -70px 0px 0px;
+        width: 110px;
+        transform: translateX(-80px);
+    }
+
+    .obra .disco {
+        width: 110px;
+    }
+
+    .fundo .obra p{
+        font-size: 11px;
+    }
+
+    footer p {
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 885px) {
+    .obra p {
+        font-size: 16px;
+    }
+}
