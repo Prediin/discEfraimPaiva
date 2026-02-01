@@ -177,6 +177,16 @@ hr {
 
 .obra .spotify{
     color: rgb(7, 225, 0);
+    font-weight: bolder;
+}
+
+.obra .spotifytitle {
+    color: rgb(7, 225, 0);
+    font-weight: bolder;
+}
+
+.spotify::before {
+    content: '\21D0';
 }
 
 .fundo {
