@@ -158,11 +158,6 @@ hr {
     box-shadow: 0px 0px 10px rgb(109, 255, 36);
 }
 
-.obra .capa:active {
-    scale: 0.8;
-    box-shadow: none;
-}
-
 .obra p {
     color: white;
     text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.725);
