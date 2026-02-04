@@ -98,6 +98,7 @@ nav a:hover {
     border: solid white 2px;
     border-radius: 50%;
 }
+
 .obra {
     border: solid white 1px;
     border-radius: 20px;
@@ -110,6 +111,61 @@ nav a:hover {
     height: 202px;
     padding: 10px;
     box-shadow: 0px 0px 10px white;
+}
+
+/* ÍCONE DE TELA CHEIA */
+.fullscreen-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 22px;
+    height: 22px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.fullscreen-icon:hover {
+    transform: scale(1.15);
+}
+
+.fullscreen-icon:active {
+    transform: scale(0.95);
+}
+
+.fullscreen-icon span {
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    border: 2px solid rgb(255, 255, 255);
+}
+
+/* CANTOS */
+.fullscreen-icon .top-left {
+    top: 0;
+    left: 0;
+    border-right: none;
+    border-bottom: none;
+}
+
+.fullscreen-icon .top-right {
+    top: 0;
+    right: 0;
+    border-left: none;
+    border-bottom: none;
+}
+
+.fullscreen-icon .bottom-left {
+    bottom: 0;
+    left: 0;
+    border-right: none;
+    border-top: none;
+}
+
+.fullscreen-icon .bottom-right {
+    bottom: 0;
+    right: 0;
+    border-left: none;
+    border-top: none;
 }
 
 hr {
@@ -296,7 +352,12 @@ footer a:hover {
         font-size: 30px;
     }
 
+    nav {
+        padding-top: 0px;
+    }
+
     nav a {
+        padding-top: 5px;
         font-size: 10px;
     }
 
@@ -323,6 +384,16 @@ footer a:hover {
         height: 132px;
     }
 
+    .fullscreen-icon {
+        width: 13px;
+        height: 13px;
+    }
+
+    .fullscreen-icon span {
+        width: 4px;
+        height: 4px;
+    }
+
     .fundo::before {
         height: 130px;
     }
@@ -347,7 +418,7 @@ footer a:hover {
     }
 
     .fundo .obra p{
-        font-size: 11.5px;
+        font-size: 11px;
     }
 
     footer p {
